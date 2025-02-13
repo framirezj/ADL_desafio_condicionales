@@ -1,0 +1,2 @@
+elementoDog = document.querySelector('#dog');
+

@@ -1,0 +1,19 @@
+body{
+    background-color: #192229;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contenedor-imagen img:hover{
+    cursor: pointer;
+}
