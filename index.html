@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="./assetts/css/mistyle.css">    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <title>Desafio-Condicionales-1</title>
 </head>
 <body>
     
     <header>
         <nav>
-            <button onclick="window.location.href='#'">PARTE 1</button>
-            <button onclick="window.location.href='parte2.html'">PARTE 2</button>
+            <button onclick="window.location.href='#'" class="original-surfer-regular">PARTE 1</button>
+            <button onclick="window.location.href='parte2.html'" class="original-surfer-regular">PARTE 2</button>
         </nav>
     </header>
 
@@ -25,8 +31,8 @@
                 }else{
                     elementoDog.style.border = '5px solid red';
                     confetti({
-                        particleCount: 100, // Cantidad de partículas
-                        spread: 200, // Ángulo de dispersión
+                        particleCount: 110, // Cantidad de partículas
+                        spread: 120, // Ángulo de dispersión
                         origin: { y: 0.4 } // Desde dónde aparecen las serpentinas
                     });
                 }
@@ -35,7 +41,12 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        
+            <img src="./assetts/img/github.png" alt="logo-github">
+            <p class="press-start-2p-regular"><a href="https://github.com/framirezj/ADL_desafio_condicionales">@framirezj</a></p>
+        
+    </footer>
 
     <script src="./assetts/js/miscript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>

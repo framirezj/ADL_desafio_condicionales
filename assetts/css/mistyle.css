@@ -1,34 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
+/* font */
+.original-surfer-regular {
+  font-family: "Original Surfer", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-body{
-    background-color: #192229;
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.press-start-2p-regular {
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-nav{
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav button{
-    width: 100%;
-    padding: 1rem;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+body {
+  background-color: #192229;
+  min-height: 100vh;
 
-main{
-   flex: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contenedor-imagen img:hover{
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+nav button {
+  flex: 1;
+  padding: 1rem;
+  font-size: x-large;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background: #318aac;
+}
+
+nav button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-imagen img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-imagen img:hover {
+  cursor: pointer;
+  transform: rotate(2deg) scale(1.6);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  color: white;
+  justify-content: start;
+  align-items: center;
+}
+
+footer img {
+  width: 5rem;
+}
+
+footer a:hover {
+  color: #318aac;
+}
+
+@media (max-width: 1000px) {
+  /* Estilos para pantallas con un ancho máximo de 600px */
+  .contenedor-imagen img:hover {
     cursor: pointer;
+    transform: scale(1);
+  }
 }
