@@ -38,6 +38,7 @@ nav {
 
 nav button {
   flex: 1;
+  color:white;
   padding: 1rem;
   font-size: x-large;
   cursor: pointer;
