@@ -10,8 +10,8 @@
     
     <header>
         <nav>
-            <button>PARTE 1</button>
-            <button>PARTE 2</button>
+            <button onclick="window.location.href='#'">PARTE 1</button>
+            <button onclick="window.location.href='parte2.html'">PARTE 2</button>
         </nav>
     </header>
 
@@ -24,6 +24,11 @@
                     elementoDog.style.border = '';
                 }else{
                     elementoDog.style.border = '5px solid red';
+                    confetti({
+                        particleCount: 100, // Cantidad de partículas
+                        spread: 200, // Ángulo de dispersión
+                        origin: { y: 0.4 } // Desde dónde aparecen las serpentinas
+                    });
                 }
                 
                 " id="dog" src="./assetts/img/dog.jpg" alt="perrito">
@@ -33,6 +38,8 @@
     <footer></footer>
 
     <script src="./assetts/js/miscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+    
 
 </body>
 </html>
