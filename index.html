@@ -30,12 +30,12 @@
                     elementoDog.style.border = '';
                 }else{
                     elementoDog.style.border = '5px solid red';
-                    for (let i = 0; i < 2; i++) {
+                    for (let i = 0; i < 5; i++) {
                         setTimeout(() => {
                             confetti({
                                 particleCount: 110, // Cantidad de partículas
                                 spread: 120, // Ángulo de dispersión
-                                origin: { y: 0.4 + (i/8) } // Desde dónde aparecen las serpentinas
+                                origin: { y: 0.4 + (i/6) } // Desde dónde aparecen las serpentinas
                             });
                         }, i * 500); // Retraso de 500ms entre cada iteración
                     }
