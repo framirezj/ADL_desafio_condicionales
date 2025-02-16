@@ -87,6 +87,8 @@ main {
 
 .titulo{
   color: white;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .titulo span{
