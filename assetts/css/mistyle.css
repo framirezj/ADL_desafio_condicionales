@@ -148,6 +148,52 @@ input{
 }
 
 
+/* parte 3 */
+.contendor-password{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.contendor-password p{
+  font-size:xx-large;
+  text-align: center;
+}
+
+#ingresar{
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+    background-color: #318aac;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: x-large;
+    border: 3px solid white;
+}
+
+#ingresar:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+}
+
+.selects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+select{
+  padding: 3rem;
+  font-size: x-large;
+}
+
+
 
 /* footer */
 
