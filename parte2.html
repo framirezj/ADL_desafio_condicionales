@@ -29,19 +29,33 @@
 
         <div class="card">
           <img src="./assetts/img/s_html5.png" alt="logo html" />
-          <input id="one" class="original-surfer-regular" type="text" value="0"/>
+          <input id="one" class="press-start-2p-regular" type="text" value="0"/>
         </div>
         <div class="card">
           <img src="./assetts/img/s_css.png" alt="logo css" />
-          <input id="two" class="original-surfer-regular" type="text" value="0"/>
+          <input id="two" class="press-start-2p-regular" type="text" value="0"/>
         </div>
         <div class="card">
           <img src="./assetts/img/s_js.png" alt="logo js" />
-          <input id="three" class="original-surfer-regular" type="text" value="0" />
+          <input id="three" class="press-start-2p-regular" type="text" value="0" />
         </div>
       
         </div>
-        <p class="cuenta-sticker press-start-2p-regular">LLEVAS <span>0</span> STICKER</p>
+        <p id="text-total" class="press-start-2p-regular cuenta-sticker">LLEVAS <span id="total">0</span> STICKER</p>
+        
+        <button id="verificar" class="press-start-2p-regular" 
+          onclick="
+
+            let suma = Number(inputOne.value) + Number(inputTwo.value) + Number(inputThree.value);
+
+            if(suma > 10){
+              document.querySelector('#text-total').textContent = 'Llevas demasiados stickers &#128517';
+            } else {
+              document.querySelector('#text-total').innerHTML = 'LLEVAS <span id=\'total\'>0</span> STICKER';
+              document.querySelector('#total').textContent = suma
+            }
+          
+          ">VERIFICAR</button>
     </main>
 
     <footer>
