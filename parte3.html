@@ -77,11 +77,38 @@
             <option value="6">6</option>
             <option value="7">7</option>
             <option value="8">8</option>
-            <option value="9">9</option>
+            <option value="9" style="color: red;">9</option>
           </select>
         </div>
 
-        <button id="ingresar" class="press-start-2p-regular">INGRESAR</button>
+        <button id="ingresar" class="press-start-2p-regular" 
+          onclick="
+        
+          /* codigo */
+          let password = selectOne.value + selectTwo.value + selectThree.value;
+
+
+          if( password === '911' || password === '714') {
+            acceso.innerHTML = 'ACCESO PERMITIDO <br> <span>🔓</span>';
+            acceso.style.color = 'green';
+            for (let i = 0; i < 5; i++) {
+                        setTimeout(() => {
+                            confetti({
+                                particleCount: 110, // Cantidad de partículas
+                                spread: 120, // Ángulo de dispersión
+                                origin: { y: 0.5 } // Desde dónde aparecen las serpentinas
+                            });
+                        },200); // Retraso de 500ms entre cada iteración
+                    }
+          }else{
+            acceso.innerHTML = 'ACCESO DENEGADO <br> <span>🔒</span>';
+            acceso.style.color = 'red';
+
+          }
+
+          ">INGRESAR</button>
+
+          <p id="acceso" class="press-start-2p-regular"></p>
       </div>
 
     </main>
