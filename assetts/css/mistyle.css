@@ -32,7 +32,7 @@ nav {
 
 nav button {
   flex: 1;
-  color:white;
+  color: white;
   padding: 1rem;
   font-size: x-large;
   cursor: pointer;
@@ -55,7 +55,6 @@ main {
   gap: 1rem;
 }
 
-
 /* parte1 */
 
 .contenedor-imagen {
@@ -72,45 +71,44 @@ main {
 .contenedor-imagen img:hover {
   cursor: pointer;
   transform: rotate(2deg) scale(1.6);
-  box-shadow: 10px 10px 9px 0px rgba(199,199,199,0.75);
--webkit-box-shadow: 10px 10px 9px 0px rgba(199,199,199,0.75);
--moz-box-shadow: 10px 10px 9px 0px rgba(199,199,199,0.75);
+  box-shadow: 10px 10px 9px 0px rgba(199, 199, 199, 0.75);
+  -webkit-box-shadow: 10px 10px 9px 0px rgba(199, 199, 199, 0.75);
+  -moz-box-shadow: 10px 10px 9px 0px rgba(199, 199, 199, 0.75);
 }
-
 
 /* parte 2 */
 
-.titulo{
+.titulo {
   color: white;
   padding-top: 1rem;
   text-align: center;
 }
 
-.titulo span{
+.titulo span {
   font-size: 2rem;
   color: red;
   display: inline-block;
   transform: rotate(-10deg);
 }
 
-.cuenta-sticker{
+.cuenta-sticker {
   padding-top: 1rem;
   font-size: 1.3rem;
   color: white;
   text-align: center;
 }
 
-.contenedor-sticker{
+.contenedor-sticker {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;  
+  gap: 2rem;
   padding-top: 1rem;
 }
 
-.card{
+.card {
   width: 25rem;
   display: flex;
   flex-direction: column;
@@ -118,10 +116,9 @@ main {
 
 .card img {
   max-height: 400px;
-  
 }
 
-input{
+input {
   all: unset;
   background-color: rgb(49, 138, 172);
   color: white;
@@ -132,7 +129,7 @@ input{
   font-size: 3rem;
 }
 
-#verificar{
+#verificar {
   margin-top: 1rem;
   padding: 1rem 2rem;
   background-color: #318aac;
@@ -142,14 +139,13 @@ input{
   font-size: x-large;
 }
 
-#verificar:hover{
+#verificar:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
 }
 
-
 /* parte 3 */
-.contendor-password{
+.contendor-password {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,28 +155,28 @@ input{
   gap: 2rem;
 }
 
-.contendor-password p{
-  font-size:xx-large;
+.contendor-password p {
+  font-size: xx-large;
   text-align: center;
 }
 
-#ingresar{
-    margin-top: 1rem;
-    padding: 2rem 2rem;
-    background-color: #318aac;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: x-large;
-    border: 3px solid white;
+#ingresar {
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+  background-color: #318aac;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: x-large;
+  border: 3px solid white;
 }
 
-#ingresar:hover{
+#ingresar:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
 }
 
-.selects{
+.selects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -188,21 +184,19 @@ input{
   gap: 2rem;
 }
 
-select{
+select {
   padding: 3rem;
   font-size: x-large;
 }
 
-#acceso{
+#acceso {
   font-size: 1.2rem;
   text-align: center;
 }
 
-#acceso span{
+#acceso span {
   font-size: 3rem;
 }
-
-
 
 /* footer */
 

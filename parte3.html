@@ -30,12 +30,6 @@
         >
           PARTE 2
         </button>
-        <button
-          onclick="window.location.href='#'"
-          class="press-start-2p-regular"
-        >
-          PARTE 3
-        </button>
       </nav>
     </header>
 
@@ -77,11 +71,13 @@
             <option value="6">6</option>
             <option value="7">7</option>
             <option value="8">8</option>
-            <option value="9" style="color: red;">9</option>
+            <option value="9">9</option>
           </select>
         </div>
 
-        <button id="ingresar" class="press-start-2p-regular" 
+        <button
+          id="ingresar"
+          class="press-start-2p-regular"
           onclick="
         
           /* codigo */
@@ -89,8 +85,15 @@
 
 
           if( password === '911' || password === '714') {
-            acceso.innerHTML = 'ACCESO PERMITIDO <br> <span>🔓</span>';
+
+              if(password === '911') {
+                acceso.innerHTML = 'PASSWORD 1 CORRECTO <br> <span>🔓</span>';
+              }else{
+                acceso.innerHTML = 'PASSWORD 2 CORRECTO <br> <span>🔓</span>';
+              }            
             acceso.style.color = 'green';
+            
+            // Animación
             for (let i = 0; i < 5; i++) {
                         setTimeout(() => {
                             confetti({
@@ -103,14 +106,14 @@
           }else{
             acceso.innerHTML = 'ACCESO DENEGADO <br> <span>🔒</span>';
             acceso.style.color = 'red';
-
           }
+          "
+        >
+          INGRESAR
+        </button>
 
-          ">INGRESAR</button>
-
-          <p id="acceso" class="press-start-2p-regular"></p>
+        <p id="acceso" class="press-start-2p-regular"></p>
       </div>
-
     </main>
 
     <footer>
